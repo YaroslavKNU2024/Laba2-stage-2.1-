@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
 namespace CinemaWebApp.Models
 {       
@@ -16,9 +16,6 @@ namespace CinemaWebApp.Models
         [Display(Name = "Назва")]
         public string Name { get; set; }
         [Required(ErrorMessage = ERR)]
-        [Display(Name = "Місце проведення")]
-        public string Location { get; set; }
-        [Required(ErrorMessage = ERR)]
         [Display(Name = "Ціна")]
         public decimal TicketPrice { get; set; }
         [Required(ErrorMessage = ERR)]
@@ -33,6 +30,5 @@ namespace CinemaWebApp.Models
 
         public virtual ICollection<FilmStudioSeance> FilmStudioSeance { get; set; }
         
-
     }
 }

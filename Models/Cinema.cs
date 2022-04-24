@@ -10,11 +10,11 @@ namespace CinemaWebApp.Models
 
         public int Id { get; set; }
         [Required(ErrorMessage = "Поле необхідно заповнити")]
-        [Display(Name = "Організатор")]
+        [Display(Name = "Кінотеатр")]
         public string CinemaName { get; set; }
 
         [Required(ErrorMessage = "Поле необхідно заповнити")]
-        [Display(Name = "Email")]
+        [Display(Name = "Контакти")]
         public string Contacts { get; set; }
         public int CountryId { get; set; }
 
